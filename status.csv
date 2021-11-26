@@ -1,0 +1,13 @@
+name,tool,status,time,error_log
+jackson-databind-2.9.7,scantist,failed,34.48435378074646,
+jackson-databind-2.9.7,whitesource,success,36.01107048988342,
+jackson-databind-2.9.7,owasp,success,38.77907347679138,
+jackson-databind-2.9.7,steady,success,37.64608144760132,
+guava-23.0,scantist,failed,173.8046154975891,
+guava-23.0,whitesource,success,84.62699007987976,
+guava-23.0,owasp,success,10.926677942276001,
+guava-23.0,steady,success,180.36836576461792,
+mall,scantist,failed,255.52363348007202,
+mall,whitesource,success,207.74838876724243,
+mall,owasp,success,20.613731384277344,
+mall,steady,success,360.2602336406708,

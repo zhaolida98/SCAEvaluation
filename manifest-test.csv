@@ -1,0 +1,5 @@
+type,target,working_path
+source,jackson-databind-2.9.7,/home/nryet/testProjects/SCAEvaluation/testsuit1/jackson-databind-2.9.7
+source,guava-23.0,/home/nryet/testProjects/SCAEvaluation/testsuit1/guava-23.0
+source,mall,/home/nryet/testProjects/SCAEvaluation/testsuit1/mall
+
