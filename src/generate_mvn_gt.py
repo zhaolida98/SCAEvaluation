@@ -80,7 +80,7 @@ def convert_line_to_dep(line: str):
     else:
         raise AttributeError(f"maven parts should never above 6, line: {line}")
 
-    if scope in ['test']:
+    if scope in ['', 'test', 'provided']:
         return None
 
     trm_dict = {
@@ -103,6 +103,10 @@ def clean_line(line:str):
     for pattern in ["+- ", "|  ", "\\- ", "   "]:
         while pattern in line:
             line = line.replace(pattern, "")
+    # remove quote comment
+    # +- org.glassfish.web:javax.servlet.jsp:jar:2.3.2:provided
+    # |  \- org.glassfish:javax.el:jar:3.0.1-b12:provided (version selected from constraint [3.0.0,))
+    line = line.split(' ')[0]
     return line
 
 

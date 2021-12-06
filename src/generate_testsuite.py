@@ -18,18 +18,19 @@ def exec_command(cmd, work_dir="."):
         return {"error": traceback.format_exc(), "code": return_code}
     return {"output": out.strip(), "code": return_code}
 
-test_suit_dir = "/home/nryet/testProjects/SCAEvaluation/testsuit2"
-collection_csv_path = '/home/nryet/testProjects/SCAEvaluation/testsuit2/collection-part.csv'
+test_suit_dir = "/root/SCAEvaluation/testsuite1"
+collection_csv_path = '/root/SCAEvaluation/testsuite1/collection-testsuite1.csv'
 collection_csv = open(collection_csv_path, 'r')
-manifest_csv_path = '/home/nryet/testProjects/SCAEvaluation/manifest-testsuite2.csv'
+manifest_csv_path = '/root/SCAEvaluation/testsuite1/manifest-testsuite1.csv'
 manifest_csv = open(manifest_csv_path, 'a+')
 reader = csv.DictReader(collection_csv)
 writer = csv.DictWriter(manifest_csv, ['type', 'target', 'working_path'])
+writer.writeheader()
 
 for cnt, item in enumerate(reader):
     raw_name = item['name']
     name = raw_name.replace('/', '@')
-    print(f"processing on {raw_name}, cnt: {cnt}", end='\r')
+    print(f"processing on {raw_name}, cnt: {cnt}")
     proj_working_dir = os.path.join(test_suit_dir, name)
     if not os.path.isdir(proj_working_dir):
         os.mkdir(proj_working_dir)

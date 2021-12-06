@@ -74,7 +74,7 @@ def get_component_report_detail(component_report_path):
             raw_library = row["Library"].replace("None", "").strip().lower().strip('-')
 
             if " " in raw_library:
-                raw_lib, raw_org = raw_library.split(" ")
+                raw_lib, raw_org = raw_library.replace(": ", ":").split(" ")
                 raw_lib = raw_lib.strip('-')
                 raw_library = f"{raw_org}:{raw_lib}"
             # if row["Status"] != "matched":

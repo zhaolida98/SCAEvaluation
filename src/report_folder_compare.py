@@ -5,8 +5,8 @@ import time
 import csv
 
 comparator_list = ['groundtruth']
-# comparatee_list = ['scantist', 'whitesource', 'owasp']
-comparatee_list = ['scantist', 'whitesource']
+comparatee_list = ['scantist', 'whitesource', 'owasp','steady']
+# comparatee_list = ['scantist', 'whitesource']
 
 def compare_components(sca_component_report_path, groundtruth_component_report_path):
     # return:
@@ -76,7 +76,7 @@ def get_component_report_detail(component_report_path):
             raw_library = row["Library"].replace("None", "").strip().lower().strip('-')
 
             if " " in raw_library:
-                raw_lib, raw_org = raw_library.split(" ")
+                raw_lib, raw_org = raw_library.replace(": ", ":").split(" ")
                 raw_lib = raw_lib.strip('-')
                 raw_library = f"{raw_org}:{raw_lib}"
             # if row["Status"] != "matched":
@@ -228,6 +228,6 @@ def generate_sca_tools_report(working_dir: str, project_name=""):
                 json.dump(current_report, outfile)
 
 if __name__ == '__main__':
-    working_dir = "/testsuit1/guava-23.0/unbuild_source_report"
-    project_name = 'guava-23.0'
+    working_dir = "/root/SCAEvaluation/testsuite1/ityouknow@spring-boot-examples/source_report/"
+    project_name = 'ityouknow@spring-boot-examples'
     generate_sca_tools_report(working_dir, project_name)

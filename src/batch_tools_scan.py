@@ -25,8 +25,11 @@ def exec_command(cmd, work_dir="."):
 
 
 def batch_tools_scan(manifest_csv, source_waiting_tools, unbuild_source_waiting_tools, jar_waiting_tools):
+    result_csv = open("/root/SCAEvaluation/testsuite1/status.csv", 'a+')
+    fieldnames = ['name', 'tool','status', 'time', 'error_log']
+    csv_writer = csv.DictWriter(result_csv, fieldnames)
+    csv_writer.writeheader()
     csv_reader = csv.DictReader(manifest_csv)
-    status_record = []
     for row in csv_reader:
         scan_type = row['type']
         target_name = row['target']
@@ -70,21 +73,16 @@ def batch_tools_scan(manifest_csv, source_waiting_tools, unbuild_source_waiting_
                     pretty_log(res['error'].decode(), 'ERROR')
                     # status_record_dict['error_log'] += res['error'].decode()
             
-            status_record.append(status_record_dict)
+            csv_writer.writerow(status_record_dict)
     manifest_csv.close()
-
-    result_csv = open("../status.csv", 'w')
-    fieldnames = ['name', 'tool','status', 'time', 'error_log']
-    csv_writer = csv.DictWriter(result_csv, fieldnames)
-    csv_writer.writeheader()
-    csv_writer.writerows(status_record)
     result_csv.close()
 
 
 if __name__ == '__main__':
-    manifest_csv_path = f"/home/nryet/testProjects/SCAEvaluation/manifest-testsuite2.csv"
+    manifest_csv_path = f"/root/SCAEvaluation/testsuite1/manifest-testsuite1.csv"
     manifest_csv = open(manifest_csv_path, 'r')
-    source_waiting_tools = ['scantist', 'whitesource', 'owasp', 'steady']
+    #['scantist', 'whitesource', 'owasp', 'steady']
+    source_waiting_tools = ['owasp']
     # source_waiting_tools = ['scantist']
     unbuild_source_waiting_tools = ['scantist', 'owasp']
     jar_waiting_tools = ['whitesource', 'owasp', 'steady']

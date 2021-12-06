@@ -74,7 +74,7 @@ def get_component_report_detail(component_report_path):
             raw_library = row["Library"].replace("None", "").strip().lower().strip('-')
 
             if " " in raw_library:
-                raw_lib, raw_org = raw_library.split(" ")
+                raw_lib, raw_org = raw_library.replace(": ", ":").split(" ")
                 raw_lib = raw_lib.strip('-')
                 raw_library = f"{raw_org}:{raw_lib}"
             # if row["Status"] != "matched":
@@ -224,12 +224,12 @@ def generate_sca_tools_report(working_dir: str, comparator_list, comparatee_list
                 json.dump(current_report, outfile)
 
 if __name__ == '__main__':
-    manifest_csv_path = f"/manifest-test.csv"
+    manifest_csv_path = f"/root/SCAEvaluation/testsuite1/manifest-testsuite1.csv"
     manifest_csv = open(manifest_csv_path, 'r')
     csv_reader = csv.DictReader(manifest_csv)
-    comparator_list = ['scantist']
+    comparator_list = ['groundtruth']
     # comparatee_list = ['scantist', 'whitesource', 'owasp']
-    comparatee_list = ['qianxin']
+    comparatee_list = ['whitesource', 'owasp', 'steady']
     for row in csv_reader:
         working_dir = row['working_path']
         generate_sca_tools_report(working_dir, comparator_list, comparatee_list)
