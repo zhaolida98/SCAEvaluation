@@ -18,10 +18,10 @@ def exec_command(cmd, work_dir="."):
         return {"error": traceback.format_exc(), "code": return_code}
     return {"output": out.strip(), "code": return_code}
 
-test_suit_dir = "/root/SCAEvaluation/testsuite1"
-collection_csv_path = '/root/SCAEvaluation/testsuite1/collection-testsuite1.csv'
+test_suit_dir = "/root/SCAEvaluation/testsuite2"
+collection_csv_path = '/root/SCAEvaluation/testsuite2/collection-testsuite2.csv'
 collection_csv = open(collection_csv_path, 'r')
-manifest_csv_path = '/root/SCAEvaluation/testsuite1/manifest-testsuite1.csv'
+manifest_csv_path = '/root/SCAEvaluation/testsuite2/manifest-testsuite2.csv'
 manifest_csv = open(manifest_csv_path, 'a+')
 reader = csv.DictReader(collection_csv)
 writer = csv.DictWriter(manifest_csv, ['type', 'target', 'working_path'])

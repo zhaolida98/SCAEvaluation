@@ -23,7 +23,7 @@ def exec_command(cmd, work_dir="."):
     return {"output": out.strip(), "code": return_code}
 
 def batch_mvn_build(manifest_csv):
-    result_csv = open("/root/SCAEvaluation/testsuite1/install_status.csv", 'a+')
+    result_csv = open("/root/SCAEvaluation/testsuite2/install_status.csv", 'a+')
     fieldnames = ['name','status', 'error_log']
     csv_writer = csv.DictWriter(result_csv, fieldnames)
     csv_writer.writeheader()
@@ -47,6 +47,6 @@ def batch_mvn_build(manifest_csv):
     manifest_csv.close()
 
 if __name__ == '__main__':
-    manifest_csv_path = f"/root/SCAEvaluation/testsuite1/manifest-testsuite1.csv"
+    manifest_csv_path = f"/root/SCAEvaluation/testsuite2/manifest-testsuite2.csv"
     manifest_csv = open(manifest_csv_path, 'r')
     batch_mvn_build(manifest_csv)

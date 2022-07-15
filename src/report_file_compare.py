@@ -80,7 +80,10 @@ def get_component_report_detail(component_report_path):
             # if row["Status"] != "matched":
                 # continue
             libraries.append(raw_library)
-            libraryversions.append("#".join([raw_library, row["Version"]]))
+            if "Version" in row:
+                libraryversions.append("#".join([raw_library, row["Version"]]))
+            else:
+                libraryversions.append("#".join([raw_library, row["Library Version"]]))
 
     result = {
         "libraries": {"count": len(libraries), "details": libraries, "unique_count": len(set(libraries))},

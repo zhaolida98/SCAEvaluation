@@ -3,7 +3,7 @@ import csv
 from src import batch_report_compare, batch_generate_mvn_gt, batch_tools_scan, report_folder_compare
 import unittest
 
-from src.batch_cve_repo import batch_cve_repo
+from SCAEvaluation.src.batch_intersect_component_cve import batch_cve_repo
 
 
 class ManualOperations(unittest.TestCase):

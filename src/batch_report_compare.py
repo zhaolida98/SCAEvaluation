@@ -3,6 +3,7 @@ import os
 import pathlib
 import time
 import csv
+import shutil
 
 
 
@@ -71,16 +72,17 @@ def get_component_report_detail(component_report_path):
             line_count += 1
             if line_count == 0:
                 pretty_log(f'{component_report_path} Column names are {", ".join(row)}', 'DEBUG')
-            raw_library = row["Library"].replace("None", "").strip().lower().strip('-')
+            raw_library = row["Library"].replace("None", "").strip().strip('-')
 
             if " " in raw_library:
                 raw_lib, raw_org = raw_library.replace(": ", ":").split(" ")
                 raw_lib = raw_lib.strip('-')
                 raw_library = f"{raw_org}:{raw_lib}"
-            # if row["Status"] != "matched":
-                # continue
             libraries.append(raw_library)
-            libraryversions.append("#".join([raw_library, row["Version"]]))
+            if "Version" in row:
+                libraryversions.append("#".join([raw_library, row["Version"]]))
+            else:
+                libraryversions.append("#".join([raw_library, row["Library Version"]]))
 
     result = {
         "libraries": {"count": len(libraries), "details": libraries, "unique_count": len(set(libraries))},
@@ -101,10 +103,8 @@ def get_issue_report_detail(issue_report_path):
             line_count += 1
             if line_count == 0:
                 pretty_log(f'Column names are {", ".join(row)}')
-            if row["Status"] != "matched":
-                continue
             cve_list.append(row["Public ID"])
-            libraryversion_list.append("#".join([row["Library"], row["Library Version"]]))
+            libraryversion_list.append("#".join([row["Library"], row["Library Version"], row["Public ID"]]))
     result = {
         "cve": {"details": cve_list, "count": len(cve_list)},
         "library_versions": {"details": list(set(libraryversion_list)), "count": len(set(libraryversion_list))}
@@ -116,33 +116,54 @@ def get_issue_report_detail(issue_report_path):
 
 def compare_issues(sca_issue_report_path, groundtruth_issue_report_path):
     sca_issue = get_issue_report_detail(sca_issue_report_path)
-    groundtruth_issue = get_issue_report_detail(
-        groundtruth_issue_report_path
-    )
-    tpcve_tp = set(sca_issue["cve"]["details"]).intersection(
+    groundtruth_issue = get_issue_report_detail(groundtruth_issue_report_path)
+    unique_cve_tp = set(sca_issue["cve"]["details"]).intersection(
         set(groundtruth_issue["cve"]["details"])
     )
-    tpcve_fn = set(groundtruth_issue["cve"]["details"]).difference(
+    unique_cve_fn = set(groundtruth_issue["cve"]["details"]).difference(
         set(sca_issue["cve"]["details"])
     )
-    tpcve_fp = set(sca_issue["cve"]["details"]).difference(
+    unique_cve_fp = set(sca_issue["cve"]["details"]).difference(
         set(groundtruth_issue["cve"]["details"])
     )
-    R_TPCVE = len(tpcve_tp) / sca_issue["cve"]["count"] \
+    gav_cve_tp = set(sca_issue["library_versions"]["details"]).intersection(
+        set(groundtruth_issue["library_versions"]["details"])
+    )
+    gav_cve_fn = set(groundtruth_issue["library_versions"]["details"]).difference(
+        set(sca_issue["library_versions"]["details"])
+    )
+    gav_cve_fp = set(sca_issue["library_versions"]["details"]).difference(
+        set(groundtruth_issue["library_versions"]["details"])
+    )
+    P_U_CVE = len(unique_cve_tp) / sca_issue["cve"]["count"] \
         if sca_issue["cve"]["count"] != 0 else -1
-    P_TPCVE = len(tpcve_tp) / groundtruth_issue["cve"]["count"] \
+    R_U_CVE = len(unique_cve_tp) / groundtruth_issue["cve"]["count"] \
         if groundtruth_issue["cve"]["count"] != 0 else -1
+    
+    P_GAV_CVE = len(gav_cve_tp) / sca_issue["library_versions"]["count"] \
+        if sca_issue["library_versions"]["count"] != 0 else -1
+    R_GAV_CVE = len(gav_cve_tp) / groundtruth_issue["library_versions"]["count"] \
+        if groundtruth_issue["library_versions"]["count"] != 0 else -1
+    
     return {
         "sca_issues": sca_issue,
         "groundtruth_issues": groundtruth_issue,
-        "tpcve_tp": list(tpcve_tp),
-        "tpcve_fn": list(tpcve_fn),
-        "tpcve_fp": list(tpcve_fp),
-        "tpcve_tp_cnt": len(list(tpcve_tp)),
-        "tpcve_fn_cnt": len(list(tpcve_fn)),
-        "tpcve_fp_cnt": len(list(tpcve_fp)),
-        "R_TPCVE": R_TPCVE,
-        "P_TPCVE": P_TPCVE,
+        "unique_cve_tp": list(unique_cve_tp),
+        "unique_cve_fn": list(unique_cve_fn),
+        "unique_cve_fp": list(unique_cve_fp),
+        "gav_cve_tp": list(gav_cve_tp),
+        "gav_cve_fn": list(gav_cve_fn),
+        "gav_cve_fp": list(gav_cve_fp),
+        "unique_cve_tp_cnt": len(list(unique_cve_tp)),
+        "unique_cve_fn_cnt": len(list(unique_cve_fn)),
+        "unique_cve_fp_cnt": len(list(unique_cve_fp)),
+        "gav_cve_tp_cnt": len(list(gav_cve_tp)),
+        "gav_cve_fn_cnt": len(list(gav_cve_fn)),
+        "gav_cve_fp_cnt": len(list(gav_cve_fp)),
+        "R_U_CVE": R_U_CVE,
+        "P_U_CVE": P_U_CVE,
+        "R_GAV_CVE": R_GAV_CVE,
+        "P_GAV_CVE": P_GAV_CVE,
     }
 
 
@@ -150,7 +171,7 @@ def pretty_log(log, logtype="INFO"):
     print(f'[{logtype}] {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}| {log}')
 
 
-def generate_sca_tools_report(working_dir: str, comparator_list, comparatee_list):
+def generate_sca_tools_report(working_dir: str, report_folder_name, comparator_list, comparatee_list, test_case=''):
     for comparator in comparator_list:
         for comparatee in comparatee_list:
             # skip self compare
@@ -165,19 +186,17 @@ def generate_sca_tools_report(working_dir: str, comparator_list, comparatee_list
             case_report = {
                 "testcase": "",
                 "component_report": {},
-                "issur_report": {},
+                "issue_report": {},
             }
-
-            test_case = os.path.basename(working_dir)
+            if not test_case:
+                test_case = os.path.basename(working_dir)
             case_report["testcase"] = test_case
-            comparator_component_report = os.path.join(working_dir, 'source_report', f"{comparator}-component-{test_case}.csv")
-            comparator_issue_report = os.path.join(working_dir, 'source_report', f"{comparator}-issue-{test_case}.csv")
-            comparatee_component_report = os.path.join(working_dir, 'source_report', f"{comparatee}-component-{test_case}.csv")
-            comparatee_issue_report = os.path.join(working_dir, 'source_report', f"{comparatee}-issue-{test_case}.csv")
+            comparator_component_report = os.path.join(working_dir, report_folder_name, f"{comparator}-component-{test_case}.csv")
+            comparator_issue_report = os.path.join(working_dir, report_folder_name, f"{comparator}-issue-{test_case}.csv")
+            comparatee_component_report = os.path.join(working_dir, report_folder_name, f"{comparatee}-component-{test_case}.csv")
+            comparatee_issue_report = os.path.join(working_dir, report_folder_name, f"{comparatee}-issue-{test_case}.csv")
             if os.path.isfile(comparatee_component_report) and os.path.isfile(comparator_component_report):
                 compare_result = compare_components(comparatee_component_report, comparator_component_report)
-                if compare_result["sca_components"]["libraries"]["unique_count"] == 0:
-                    continue
                 case_report["component_report"] = {
                     "tpl_tp": compare_result["tpl_tp"],
                     "tplv_tp": compare_result["tplv_tp"],
@@ -201,21 +220,29 @@ def generate_sca_tools_report(working_dir: str, comparator_list, comparatee_list
 
             if os.path.isfile(comparatee_issue_report) and os.path.isfile(comparator_issue_report):
                 compare_result = compare_issues(comparatee_issue_report, comparator_issue_report)
-                case_report["issur_report"] = {
-                    "tpcve_tp": compare_result["tpcve_tp"],
-                    "tpcve_fn": compare_result["tpcve_fn"],
-                    "tpcve_fp": compare_result["tpcve_fp"],
-                    "tpcve_tp_cnt": compare_result["tpcve_tp_cnt"],
-                    "tpcve_fn_cnt": compare_result["tpcve_fn_cnt"],
-                    "tpcve_fp_cnt": compare_result["tpcve_fp_cnt"],
-                    "R_TPCVE": compare_result["R_TPCVE"],
-                    "P_TPCVE": compare_result["P_TPCVE"],
+                case_report["issue_report"] = {
+                    "unique_cve_tp": compare_result['unique_cve_tp'],
+                    "unique_cve_fn": compare_result['unique_cve_fn'],
+                    "unique_cve_fp": compare_result['unique_cve_fp'],
+                    "gav_cve_tp": compare_result['gav_cve_tp'],
+                    "gav_cve_fn": compare_result['gav_cve_fn'],
+                    "gav_cve_fp": compare_result['gav_cve_fp'],
+                    "unique_cve_tp_cnt": compare_result['unique_cve_tp_cnt'],
+                    "unique_cve_fn_cnt": compare_result['unique_cve_fn_cnt'],
+                    "unique_cve_fp_cnt": compare_result['unique_cve_fp_cnt'],
+                    "gav_cve_tp_cnt": compare_result['gav_cve_tp_cnt'],
+                    "gav_cve_fn_cnt": compare_result['gav_cve_fn_cnt'],
+                    "gav_cve_fp_cnt": compare_result['gav_cve_fp_cnt'],
+                    "R_U_CVE": compare_result['R_U_CVE'],
+                    "P_U_CVE": compare_result['P_U_CVE'],
+                    "R_GAV_CVE": compare_result['R_GAV_CVE'],
+                    "P_GAV_CVE": compare_result['P_GAV_CVE'],
                 }
             else:
                 pretty_log(f"don't have {comparatee_issue_report} or {comparator_issue_report}", 'WARNING')
             current_report["report_per_case"].append(case_report)
 
-            testsuite_report_summary_path = os.path.join(working_dir,"source_report", f"{comparator}-{comparatee}-summary.json")
+            testsuite_report_summary_path = os.path.join(working_dir,report_folder_name, f"{comparator}-{comparatee}-summary.json")
             pretty_log(f"saving report to {testsuite_report_summary_path}")
             pathlib.Path(testsuite_report_summary_path).parent.mkdir(parents=True, exist_ok=True)
             if os.path.isfile(testsuite_report_summary_path):
@@ -223,13 +250,35 @@ def generate_sca_tools_report(working_dir: str, comparator_list, comparatee_list
             with open(testsuite_report_summary_path, "w") as outfile:
                 json.dump(current_report, outfile)
 
+
+def clear_json(working_dir, report_folder_name):
+    for file in os.listdir(os.path.join(working_dir, report_folder_name)):
+        if file.endswith(".json"):
+            os.remove(os.path.join(working_dir, report_folder_name, file))
+
+
 if __name__ == '__main__':
-    manifest_csv_path = f"/root/SCAEvaluation/testsuite1/manifest-testsuite1.csv"
+    manifest_csv_path = f"/root/SCAEvaluation/testsuite2/manifest-testsuite2.csv"
     manifest_csv = open(manifest_csv_path, 'r')
     csv_reader = csv.DictReader(manifest_csv)
     comparator_list = ['groundtruth']
-    # comparatee_list = ['scantist', 'whitesource', 'owasp']
-    comparatee_list = ['whitesource', 'owasp', 'steady']
     for row in csv_reader:
         working_dir = row['working_path']
-        generate_sca_tools_report(working_dir, comparator_list, comparatee_list)
+        test_case = row['target']
+        scan_type = row['type']
+        if scan_type == "source":
+            comparatee_list = ['scantist', 'whitesource', 'owasp','steady', 'ossindex']
+            report_folder_name = "source_report"
+            clear_json(working_dir, report_folder_name)
+            generate_sca_tools_report(working_dir, report_folder_name, comparator_list, comparatee_list, test_case)
+            report_folder_name = "intersect_report"
+            clear_json(working_dir, report_folder_name)
+            generate_sca_tools_report(working_dir, report_folder_name, comparator_list, comparatee_list, test_case)
+        elif scan_type == 'saas':
+            comparatee_list = ['scantist', 'dependabot', 'snyk']
+            report_folder_name = "saas_report"
+            clear_json(working_dir, report_folder_name)
+            generate_sca_tools_report(working_dir, report_folder_name, comparator_list, comparatee_list, test_case)
+            report_folder_name = "saas_intersect_report"
+            clear_json(working_dir, report_folder_name)
+            generate_sca_tools_report(working_dir, report_folder_name, comparator_list, comparatee_list, test_case)

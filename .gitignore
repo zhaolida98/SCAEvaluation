@@ -1,3 +1,6 @@
 .idea
 testsuit*
 __pycache__
+.vscode
+projects
+reports
