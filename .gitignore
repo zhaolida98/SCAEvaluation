@@ -1,0 +1,11 @@
+.idea
+testsuit*
+__pycache__
+.vscode
+projects
+reports
+*.log
+*.out
+repository
+gatk-protected
+cache copy

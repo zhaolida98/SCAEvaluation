@@ -1,0 +1,1875 @@
+{
+    "related": {
+        "org.springframework.boot:spring-boot-starter-data-redis-reactive:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-data-redis-reactive:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-data-redis:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-data-redis:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.data:spring-data-redis:2.1.3.RELEASE": {
+            "gav": "org.springframework.data:spring-data-redis:2.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.data:spring-data-keyvalue:2.1.3.RELEASE": {
+            "gav": "org.springframework.data:spring-data-keyvalue:2.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.data:spring-data-commons:2.1.3.RELEASE": {
+            "gav": "org.springframework.data:spring-data-commons:2.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-tx:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-tx:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-oxm:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-oxm:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-aop:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-aop:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-context-support:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-context-support:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.lettuce:lettuce-core:5.1.3.RELEASE": {
+            "gav": "io.lettuce:lettuce-core:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.projectreactor:reactor-core:3.2.3.RELEASE": {
+            "gav": "io.projectreactor:reactor-core:3.2.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-common:4.1.31.Final": {
+            "gav": "io.netty:netty-common:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-transport:4.1.31.Final": {
+            "gav": "io.netty:netty-transport:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-buffer:4.1.31.Final": {
+            "gav": "io.netty:netty-buffer:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-resolver:4.1.31.Final": {
+            "gav": "io.netty:netty-resolver:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-handler:4.1.31.Final": {
+            "gav": "io.netty:netty-handler:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-codec:4.1.31.Final": {
+            "gav": "io.netty:netty-codec:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-gateway:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-gateway:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter:2.1.0.RC2": {
+            "gav": "org.springframework.cloud:spring-cloud-starter:2.1.0.RC2",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-context:2.1.0.RC2": {
+            "gav": "org.springframework.cloud:spring-cloud-context:2.1.0.RC2",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.security:spring-security-crypto:5.1.2.RELEASE": {
+            "gav": "org.springframework.security:spring-security-crypto:5.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-commons:2.1.0.RC2": {
+            "gav": "org.springframework.cloud:spring-cloud-commons:2.1.0.RC2",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.security:spring-security-rsa:1.0.7.RELEASE": {
+            "gav": "org.springframework.security:spring-security-rsa:1.0.7.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.bouncycastle:bcpkix-jdk15on:1.60": {
+            "gav": "org.bouncycastle:bcpkix-jdk15on:1.60",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.bouncycastle:bcprov-jdk15on:1.60": {
+            "gav": "org.bouncycastle:bcprov-jdk15on:1.60",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-gateway-core:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-gateway-core:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.projectreactor.addons:reactor-extra:3.2.0.RELEASE": {
+            "gav": "io.projectreactor.addons:reactor-extra:3.2.0.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-webflux:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-webflux:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-json:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-json:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.7": {
+            "gav": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.7": {
+            "gav": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-reactor-netty:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-reactor-netty:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.projectreactor.netty:reactor-netty:0.8.3.RELEASE": {
+            "gav": "io.projectreactor.netty:reactor-netty:0.8.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-codec-http:4.1.31.Final": {
+            "gav": "io.netty:netty-codec-http:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-codec-http2:4.1.31.Final": {
+            "gav": "io.netty:netty-codec-http2:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-handler-proxy:4.1.31.Final": {
+            "gav": "io.netty:netty-handler-proxy:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-codec-socks:4.1.31.Final": {
+            "gav": "io.netty:netty-codec-socks:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-transport-native-epoll:4.1.31.Final": {
+            "gav": "io.netty:netty-transport-native-epoll:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "linux-x86_64",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.netty:netty-transport-native-unix-common:4.1.31.Final": {
+            "gav": "io.netty:netty-transport-native-unix-common:4.1.31.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.hibernate.validator:hibernate-validator:6.0.13.Final": {
+            "gav": "org.hibernate.validator:hibernate-validator:6.0.13.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.validation:validation-api:2.0.1.Final": {
+            "gav": "javax.validation:validation-api:2.0.1.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.jboss.logging:jboss-logging:3.3.2.Final": {
+            "gav": "org.jboss.logging:jboss-logging:3.3.2.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml:classmate:1.4.0": {
+            "gav": "com.fasterxml:classmate:1.4.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-web:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-web:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-beans:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-beans:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-webflux:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-webflux:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.synchronoss.cloud:nio-multipart-parser:1.1.0": {
+            "gav": "org.synchronoss.cloud:nio-multipart-parser:1.1.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.synchronoss.cloud:nio-stream-storage:1.1.3": {
+            "gav": "org.synchronoss.cloud:nio-stream-storage:1.1.3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-netflix-hystrix:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-netflix-hystrix:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-autoconfigure:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-autoconfigure:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-aop:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-aop:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.aspectj:aspectjweaver:1.9.2": {
+            "gav": "org.aspectj:aspectjweaver:1.9.2",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-netflix-eureka-client:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-netflix-eureka-client:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.eureka:eureka-client:1.9.8": {
+            "gav": "com.netflix.eureka:eureka-client:1.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.codehaus.jettison:jettison:1.3.7": {
+            "gav": "org.codehaus.jettison:jettison:1.3.7",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "stax:stax-api:1.0.1": {
+            "gav": "stax:stax-api:1.0.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.netflix-commons:netflix-eventbus:0.3.0": {
+            "gav": "com.netflix.netflix-commons:netflix-eventbus:0.3.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.netflix-commons:netflix-infix:0.3.0": {
+            "gav": "com.netflix.netflix-commons:netflix-infix:0.3.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "commons-jxpath:commons-jxpath:1.3": {
+            "gav": "commons-jxpath:commons-jxpath:1.3",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "joda-time:joda-time:2.10.1": {
+            "gav": "joda-time:joda-time:2.10.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.antlr:antlr-runtime:3.4": {
+            "gav": "org.antlr:antlr-runtime:3.4",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.antlr:stringtemplate:3.2.1": {
+            "gav": "org.antlr:stringtemplate:3.2.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "antlr:antlr:2.7.7": {
+            "gav": "antlr:antlr:2.7.7",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.google.code.gson:gson:2.8.5": {
+            "gav": "com.google.code.gson:gson:2.8.5",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.commons:commons-math:2.2": {
+            "gav": "org.apache.commons:commons-math:2.2",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.archaius:archaius-core:0.7.6": {
+            "gav": "com.netflix.archaius:archaius-core:0.7.6",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.google.guava:guava:16.0": {
+            "gav": "com.google.guava:guava:16.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.ws.rs:jsr311-api:1.1.1": {
+            "gav": "javax.ws.rs:jsr311-api:1.1.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.servo:servo-core:0.12.21": {
+            "gav": "com.netflix.servo:servo-core:0.12.21",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.sun.jersey:jersey-core:1.19.1": {
+            "gav": "com.sun.jersey:jersey-core:1.19.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.sun.jersey:jersey-client:1.19.1": {
+            "gav": "com.sun.jersey:jersey-client:1.19.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.sun.jersey.contribs:jersey-apache-client4:1.19.1": {
+            "gav": "com.sun.jersey.contribs:jersey-apache-client4:1.19.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.6": {
+            "gav": "org.apache.httpcomponents:httpclient:4.5.6",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.httpcomponents:httpcore:4.4.10": {
+            "gav": "org.apache.httpcomponents:httpcore:4.4.10",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "commons-codec:commons-codec:1.11": {
+            "gav": "commons-codec:commons-codec:1.11",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.google.inject:guice:4.1.0": {
+            "gav": "com.google.inject:guice:4.1.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.inject:javax.inject:1": {
+            "gav": "javax.inject:javax.inject:1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "aopalliance:aopalliance:1.0": {
+            "gav": "aopalliance:aopalliance:1.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.github.vlsi.compactmap:compactmap:1.2.1": {
+            "gav": "com.github.vlsi.compactmap:compactmap:1.2.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.github.andrewoma.dexx:dexx-collections:0.2": {
+            "gav": "com.github.andrewoma.dexx:dexx-collections:0.2",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.core:jackson-annotations:2.9.0": {
+            "gav": "com.fasterxml.jackson.core:jackson-annotations:2.9.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.core:jackson-core:2.9.7": {
+            "gav": "com.fasterxml.jackson.core:jackson-core:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.core:jackson-databind:2.9.7": {
+            "gav": "com.fasterxml.jackson.core:jackson-databind:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.eureka:eureka-core:1.9.8": {
+            "gav": "com.netflix.eureka:eureka-core:1.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.codehaus.woodstox:woodstox-core-asl:4.4.1": {
+            "gav": "org.codehaus.woodstox:woodstox-core-asl:4.4.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.xml.stream:stax-api:1.0-2": {
+            "gav": "javax.xml.stream:stax-api:1.0-2",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.codehaus.woodstox:stax2-api:3.1.4": {
+            "gav": "org.codehaus.woodstox:stax2-api:3.1.4",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-netflix-archaius:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-netflix-archaius:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-netflix-ribbon:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-netflix-ribbon:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-netflix-archaius:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-netflix-archaius:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "commons-configuration:commons-configuration:1.8": {
+            "gav": "commons-configuration:commons-configuration:1.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "commons-lang:commons-lang:2.6": {
+            "gav": "commons-lang:commons-lang:2.6",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-netflix-ribbon:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-netflix-ribbon:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.ribbon:ribbon:2.3.0": {
+            "gav": "com.netflix.ribbon:ribbon:2.3.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.ribbon:ribbon-transport:2.3.0": {
+            "gav": "com.netflix.ribbon:ribbon-transport:2.3.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.reactivex:rxnetty-contexts:0.4.9": {
+            "gav": "io.reactivex:rxnetty-contexts:0.4.9",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.reactivex:rxnetty-servo:0.4.9": {
+            "gav": "io.reactivex:rxnetty-servo:0.4.9",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.reactivex:rxnetty:0.4.9": {
+            "gav": "io.reactivex:rxnetty:0.4.9",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.ribbon:ribbon-core:2.3.0": {
+            "gav": "com.netflix.ribbon:ribbon-core:2.3.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.ribbon:ribbon-httpclient:2.3.0": {
+            "gav": "com.netflix.ribbon:ribbon-httpclient:2.3.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "commons-collections:commons-collections:3.2.2": {
+            "gav": "commons-collections:commons-collections:3.2.2",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.netflix-commons:netflix-commons-util:0.3.0": {
+            "gav": "com.netflix.netflix-commons:netflix-commons-util:0.3.0",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.ribbon:ribbon-loadbalancer:2.3.0": {
+            "gav": "com.netflix.ribbon:ribbon-loadbalancer:2.3.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.netflix-commons:netflix-statistics:0.1.1": {
+            "gav": "com.netflix.netflix-commons:netflix-statistics:0.1.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.reactivex:rxjava:1.3.8": {
+            "gav": "io.reactivex:rxjava:1.3.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.ribbon:ribbon-eureka:2.3.0": {
+            "gav": "com.netflix.ribbon:ribbon-eureka:2.3.0",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.slf4j:slf4j-api:1.7.25": {
+            "gav": "org.slf4j:slf4j-api:1.7.25",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.thoughtworks.xstream:xstream:1.4.10": {
+            "gav": "com.thoughtworks.xstream:xstream:1.4.10",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "xmlpull:xmlpull:1.1.3.1": {
+            "gav": "xmlpull:xmlpull:1.1.3.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "xpp3:xpp3_min:1.1.4c": {
+            "gav": "xpp3:xpp3_min:1.1.4c",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-hystrix:1.4.6.RELEASE": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-hystrix:1.4.6.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.hystrix:hystrix-core:1.5.18": {
+            "gav": "com.netflix.hystrix:hystrix-core:1.5.18",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.hystrix:hystrix-serialization:1.5.18": {
+            "gav": "com.netflix.hystrix:hystrix-serialization:1.5.18",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.module:jackson-module-afterburner:2.9.7": {
+            "gav": "com.fasterxml.jackson.module:jackson-module-afterburner:2.9.7",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.hystrix:hystrix-metrics-event-stream:1.5.18": {
+            "gav": "com.netflix.hystrix:hystrix-metrics-event-stream:1.5.18",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.netflix.hystrix:hystrix-javanica:1.5.18": {
+            "gav": "com.netflix.hystrix:hystrix-javanica:1.5.18",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.commons:commons-lang3:3.8.1": {
+            "gav": "org.apache.commons:commons-lang3:3.8.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.ow2.asm:asm:5.0.4": {
+            "gav": "org.ow2.asm:asm:5.0.4",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.reactivex:rxjava-reactive-streams:1.2.1": {
+            "gav": "io.reactivex:rxjava-reactive-streams:1.2.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.reactivestreams:reactive-streams:1.0.2": {
+            "gav": "org.reactivestreams:reactive-streams:1.0.2",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-actuator:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-actuator:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-logging:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-logging:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "ch.qos.logback:logback-classic:1.2.3": {
+            "gav": "ch.qos.logback:logback-classic:1.2.3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "ch.qos.logback:logback-core:1.2.3": {
+            "gav": "ch.qos.logback:logback-core:1.2.3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.logging.log4j:log4j-to-slf4j:2.11.1": {
+            "gav": "org.apache.logging.log4j:log4j-to-slf4j:2.11.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.logging.log4j:log4j-api:2.11.1": {
+            "gav": "org.apache.logging.log4j:log4j-api:2.11.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.slf4j:jul-to-slf4j:1.7.25": {
+            "gav": "org.slf4j:jul-to-slf4j:1.7.25",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.annotation:javax.annotation-api:1.3.2": {
+            "gav": "javax.annotation:javax.annotation-api:1.3.2",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.yaml:snakeyaml:1.23": {
+            "gav": "org.yaml:snakeyaml:1.23",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-actuator-autoconfigure:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-actuator-autoconfigure:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-actuator:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-actuator:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-context:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-context:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-expression:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-expression:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.7": {
+            "gav": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.micrometer:micrometer-core:1.1.1": {
+            "gav": "io.micrometer:micrometer-core:1.1.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.hdrhistogram:HdrHistogram:2.1.9": {
+            "gav": "org.hdrhistogram:HdrHistogram:2.1.9",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.latencyutils:LatencyUtils:2.0.3": {
+            "gav": "org.latencyutils:LatencyUtils:2.0.3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-core:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-core:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-jcl:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-jcl:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-netflix-eureka-server:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-netflix-eureka-server:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-web:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-web:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-tomcat:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-tomcat:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:9.0.13": {
+            "gav": "org.apache.tomcat.embed:tomcat-embed-core:9.0.13",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-el:9.0.13": {
+            "gav": "org.apache.tomcat.embed:tomcat-embed-el:9.0.13",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-websocket:9.0.13": {
+            "gav": "org.apache.tomcat.embed:tomcat-embed-websocket:9.0.13",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-webmvc:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-webmvc:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-freemarker:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-freemarker:2.1.1.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.freemarker:freemarker:2.3.28": {
+            "gav": "org.freemarker:freemarker:2.3.28",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.sun.jersey:jersey-servlet:1.19.1": {
+            "gav": "com.sun.jersey:jersey-servlet:1.19.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.sun.jersey:jersey-server:1.19.1": {
+            "gav": "com.sun.jersey:jersey-server:1.19.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.google.code.findbugs:jsr305:3.0.1": {
+            "gav": "com.google.code.findbugs:jsr305:3.0.1",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.7": {
+            "gav": "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.9.7": {
+            "gav": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.9.7",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.woodstox:woodstox-core:5.0.3": {
+            "gav": "com.fasterxml.woodstox:woodstox-core:5.0.3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-web:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-web:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-autoconfigure:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-autoconfigure:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-logging:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-logging:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-json:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-json:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.core:jackson-databind:2.9.8": {
+            "gav": "com.fasterxml.jackson.core:jackson-databind:2.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8": {
+            "gav": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8": {
+            "gav": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8": {
+            "gav": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-tomcat:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-tomcat:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:9.0.14": {
+            "gav": "org.apache.tomcat.embed:tomcat-embed-core:9.0.14",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-el:9.0.14": {
+            "gav": "org.apache.tomcat.embed:tomcat-embed-el:9.0.14",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-websocket:9.0.14": {
+            "gav": "org.apache.tomcat.embed:tomcat-embed-websocket:9.0.14",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.hibernate.validator:hibernate-validator:6.0.14.Final": {
+            "gav": "org.hibernate.validator:hibernate-validator:6.0.14.Final",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-web:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-web:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-beans:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-beans:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-webmvc:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-webmvc:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-aop:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-aop:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-context:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-context:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-expression:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-expression:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.security:spring-security-crypto:5.1.3.RELEASE": {
+            "gav": "org.springframework.security:spring-security-crypto:5.1.3.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-aop:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-aop:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.core:jackson-core:2.9.8": {
+            "gav": "com.fasterxml.jackson.core:jackson-core:2.9.8",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.fasterxml.jackson.module:jackson-module-afterburner:2.9.8": {
+            "gav": "com.fasterxml.jackson.module:jackson-module-afterburner:2.9.8",
+            "scope": "runtime",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-actuator:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-actuator:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-actuator-autoconfigure:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-actuator-autoconfigure:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-actuator:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-actuator:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "io.micrometer:micrometer-core:1.1.2": {
+            "gav": "io.micrometer:micrometer-core:1.1.2",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-core:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-core:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-jcl:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-jcl:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.cloud:spring-cloud-netflix-hystrix-dashboard:2.1.0.RC3": {
+            "gav": "org.springframework.cloud:spring-cloud-netflix-hystrix-dashboard:2.1.0.RC3",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-freemarker:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-freemarker:2.1.2.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-context-support:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-context-support:5.1.4.RELEASE",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.webjars:jquery:2.1.1": {
+            "gav": "org.webjars:jquery:2.1.1",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.webjars:d3js:3.4.11": {
+            "gav": "org.webjars:d3js:3.4.11",
+            "scope": "compile",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        }
+    },
+    "unrelated": {
+        "me.aboullaite:gateway:1.0.0-SNAPSHOT": {
+            "gav": "me.aboullaite:gateway:1.0.0-SNAPSHOT",
+            "scope": "",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-test:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-test:2.1.1.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-test:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-test:2.1.1.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-test-autoconfigure:2.1.1.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-test-autoconfigure:2.1.1.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.jayway.jsonpath:json-path:2.4.0": {
+            "gav": "com.jayway.jsonpath:json-path:2.4.0",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "net.minidev:json-smart:2.3": {
+            "gav": "net.minidev:json-smart:2.3",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "net.minidev:accessors-smart:1.2": {
+            "gav": "net.minidev:accessors-smart:1.2",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "junit:junit:4.12": {
+            "gav": "junit:junit:4.12",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.assertj:assertj-core:3.11.1": {
+            "gav": "org.assertj:assertj-core:3.11.1",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.mockito:mockito-core:2.23.4": {
+            "gav": "org.mockito:mockito-core:2.23.4",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "net.bytebuddy:byte-buddy:1.9.5": {
+            "gav": "net.bytebuddy:byte-buddy:1.9.5",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "net.bytebuddy:byte-buddy-agent:1.9.5": {
+            "gav": "net.bytebuddy:byte-buddy-agent:1.9.5",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.objenesis:objenesis:2.6": {
+            "gav": "org.objenesis:objenesis:2.6",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.hamcrest:hamcrest-core:1.3": {
+            "gav": "org.hamcrest:hamcrest-core:1.3",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.hamcrest:hamcrest-library:1.3": {
+            "gav": "org.hamcrest:hamcrest-library:1.3",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.skyscreamer:jsonassert:1.5.0": {
+            "gav": "org.skyscreamer:jsonassert:1.5.0",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "com.vaadin.external.google:android-json:0.0.20131108.vaadin1": {
+            "gav": "com.vaadin.external.google:android-json:0.0.20131108.vaadin1",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-test:5.1.3.RELEASE": {
+            "gav": "org.springframework:spring-test:5.1.3.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.xmlunit:xmlunit-core:2.6.2": {
+            "gav": "org.xmlunit:xmlunit-core:2.6.2",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.xml.bind:jaxb-api:2.3.1": {
+            "gav": "javax.xml.bind:jaxb-api:2.3.1",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "javax.activation:javax.activation-api:1.2.0": {
+            "gav": "javax.activation:javax.activation-api:1.2.0",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "me.aboullaite:discovery:1.0.0-SNAPSHOT": {
+            "gav": "me.aboullaite:discovery:1.0.0-SNAPSHOT",
+            "scope": "",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.ow2.asm:asm:5.0.4": {
+            "gav": "org.ow2.asm:asm:5.0.4",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "me.aboullaite:moviestore:1.0.0-SNAPSHOT": {
+            "gav": "me.aboullaite:moviestore:1.0.0-SNAPSHOT",
+            "scope": "",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-starter-test:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-starter-test:2.1.2.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-test:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-test:2.1.2.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework.boot:spring-boot-test-autoconfigure:2.1.2.RELEASE": {
+            "gav": "org.springframework.boot:spring-boot-test-autoconfigure:2.1.2.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "net.bytebuddy:byte-buddy:1.9.7": {
+            "gav": "net.bytebuddy:byte-buddy:1.9.7",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "net.bytebuddy:byte-buddy-agent:1.9.7": {
+            "gav": "net.bytebuddy:byte-buddy-agent:1.9.7",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "org.springframework:spring-test:5.1.4.RELEASE": {
+            "gav": "org.springframework:spring-test:5.1.4.RELEASE",
+            "scope": "test",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "me.aboullaite:bookstore:1.0.0-SNAPSHOT": {
+            "gav": "me.aboullaite:bookstore:1.0.0-SNAPSHOT",
+            "scope": "",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "me.aboullaite:hystrix-dashboard:1.0.0-SNAPSHOT": {
+            "gav": "me.aboullaite:hystrix-dashboard:1.0.0-SNAPSHOT",
+            "scope": "",
+            "classifier": "",
+            "type": "jar",
+            "exclude_reason": "",
+            "cve_list": []
+        },
+        "me.aboullaite:spring-cloud-gateway-example:1.0.0-SNAPSHOT": {
+            "gav": "me.aboullaite:spring-cloud-gateway-example:1.0.0-SNAPSHOT",
+            "scope": "",
+            "classifier": "",
+            "type": "pom",
+            "exclude_reason": "",
+            "cve_list": []
+        }
+    },
+    "shaded": {
+        "org.jctools:jctools-core:2.1.1": {
+            "gav": "org.jctools:jctools-core:2.1.1",
+            "scope": "shaded",
+            "classifier": "",
+            "type": "",
+            "exclude_reason": "",
+            "path": "/home/lida/.m2/repository/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar/META-INF/maven/org.jctools/jctools-core/pom.xml",
+            "cve_list": []
+        },
+        "cglib:cglib:3.2.0": {
+            "gav": "cglib:cglib:3.2.0",
+            "scope": "shaded",
+            "classifier": "",
+            "type": "",
+            "exclude_reason": "",
+            "path": "/home/lida/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0.jar/META-INF/maven/cglib/cglib/pom.xml",
+            "cve_list": []
+        },
+        "org.pcollections:pcollections:3.0.3": {
+            "gav": "org.pcollections:pcollections:3.0.3",
+            "scope": "shaded",
+            "classifier": "",
+            "type": "",
+            "exclude_reason": "",
+            "path": "/home/lida/.m2/repository/io/micrometer/micrometer-core/1.1.2/micrometer-core-1.1.2.jar/META-INF/maven/org.pcollections/pcollections/pom.xml",
+            "cve_list": []
+        }
+    },
+    "summary": {
+        "related_cmp_cnt": 196,
+        "unrelated_cmp_cnt": 33,
+        "shaded_cmp_cnt": 3,
+        "related_cve_cnt": 0,
+        "unrelated_cve_cnt": 0,
+        "shaded_cve_cnt": 0
+    }
+}
